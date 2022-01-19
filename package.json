@@ -1,13 +1,13 @@
 {
-  "name": "swc-testing",
+  "name": "swc-expressjs-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "build": "swc src -d dist",
-    "build-dev": "npm run build && node --experimental-modules --es-module-specifier-resolution=node dist/app.js",
+    "build-dev": "npm run build && node --experimental-modules --es-module-specifier-resolution=node dist/server.js",
     "dev": "nodemon --ext ts --exec \"npm run build-dev\"",
-    "start": "npm run build && node --experimental-modules --es-module-specifier-resolution=node dist/app.js"
+    "start": "npm run build && node --experimental-modules --es-module-specifier-resolution=node dist/server.js"
   },
   "type": "module",
   "keywords": [],
